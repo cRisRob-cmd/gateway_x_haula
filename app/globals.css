@@ -1,0 +1,292 @@
+:root {
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --paper: #fdfcfa;
+  --line: #e2ddd3;
+  --accent: #b5482a;
+  --accent-soft: #f3e6df;
+  --flag: #a97a1e;
+  --flag-bg: #fbf3e1;
+  --gap: #8a8a8a;
+  --gap-bg: #f4f3f0;
+  --verified-bg: #eaf1ea;
+  --verified: #3d6b45;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+}
+
+body {
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+header.masthead {
+  margin-bottom: 3.5rem;
+}
+
+header.masthead .kicker {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+header.masthead h1 {
+  font-size: 2.6rem;
+  margin: 0.4rem 0 0.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+header.masthead .sub {
+  font-family: var(--sans);
+  color: var(--ink-soft);
+  font-size: 1rem;
+  max-width: 60ch;
+}
+
+nav.toc {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  padding: 1.1rem 1.3rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+nav.toc a {
+  display: block;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 0.18rem 0;
+  break-inside: avoid;
+}
+nav.toc a:hover { color: var(--accent); }
+nav.toc .num { color: var(--accent); font-weight: 600; margin-right: 0.3em; }
+
+section.qsection {
+  margin-bottom: 1rem;
+}
+
+.section-band {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  border-top: 2px solid var(--ink);
+  padding-top: 0.5rem;
+  margin: 3.5rem 0 1.5rem;
+}
+
+article.question {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 1.5rem;
+}
+
+article.question .qnum {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--gap);
+  font-weight: 600;
+}
+
+article.question h2 {
+  font-size: 1.5rem;
+  margin: 0.2rem 0 1.1rem;
+  font-weight: 600;
+}
+
+article.question p {
+  margin: 0 0 1rem;
+}
+
+article.question strong { font-weight: 600; }
+
+.quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.08rem;
+  border-left: 3px solid var(--ink);
+  padding: 0.2rem 0 0.2rem 1.2rem;
+  margin: 1.3rem 0;
+  color: var(--ink);
+}
+.quote cite {
+  display: block;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 0.5rem;
+}
+
+.callout {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  margin: 1.2rem 0;
+  line-height: 1.55;
+}
+
+.callout.flag {
+  background: var(--flag-bg);
+  border: 1px solid #e6cf9a;
+  color: #5c451a;
+}
+.callout.flag .label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--flag);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.callout.gap {
+  background: var(--gap-bg);
+  border: 1px dashed #c3c0b8;
+  color: #55524a;
+}
+.callout.gap .label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--gap);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.callout.verified {
+  background: var(--verified-bg);
+  border: 1px solid #c6dcc9;
+  color: #29452e;
+}
+.callout.verified .label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--verified);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+table.figures {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  margin: 1.2rem 0;
+}
+table.figures th, table.figures td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+}
+table.figures th {
+  font-weight: 600;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+table.figures td.num, table.figures th.num { text-align: right; }
+
+ul.plain, ol.plain {
+  padding-left: 1.3rem;
+  margin: 0 0 1rem;
+}
+ul.plain li, ol.plain li { margin-bottom: 0.4rem; }
+
+.stat-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.2rem 0;
+}
+.stat {
+  font-family: var(--sans);
+}
+.stat .v {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+}
+.stat .k {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.screens {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 0.5rem;
+}
+.screens figure {
+  flex: 1 1 220px;
+  margin: 0;
+  background: #0f1420;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.screens figcaption {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  background: #fff;
+  padding: 0.7rem 0.9rem;
+  line-height: 1.45;
+}
+.figure-note {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--gap);
+  margin-top: 0.6rem !important;
+}
+
+footer.page-footer {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--gap);
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
