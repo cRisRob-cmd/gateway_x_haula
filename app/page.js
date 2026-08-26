@@ -475,9 +475,6 @@ export default function Home() {
       </Q>
 
       <footer className="page-footer">
-        HAULa &mdash; Gateway X Fall 2026 Fellowship pitch package. Last drafted August 25,
-        2026. Sourced from context/haula-context-dossier.md, context/haula-evidence-reconciliation.md,
-        models/HAULa_Financial_Model.xlsx, and the HAULa Arch Grants Finalist 2026 pitch deck.
       </footer>
     </main>
   );
